@@ -1,0 +1,40 @@
+- ALTERAR NOME DE USUARIO, EMAIL E EDITOR
+
+git config --global user.name "nome de usuario"
+git config --global user.email "email de usuario"
+git config --global core.editor code
+
+obs: checar se o visual studio code esta nas variveis de ambiente
+
+- VISUALIZAR NOME DE USUARIO, EMAIL, EDITOR E OUTRAS INFO
+
+git config --list
+
+- CRIAR PASTA .GIT NA PASTA CORRENTE
+
+git init
+
+- VER O STATUS DO "CONTEINER"
+
+git status 
+
+- ADCIONAR COISAS AO "CONTEINER"
+
+git add .
+
+obs: o "." indica que tudo irá para o "conteiner" podendo usar "*"
+
+- MANDAR O "CONTEINER" PARA A PASTA .git = salvar e criar uma versão = node
+
+git commit -m "comentario"
+
+- VER O HISTORICO DE COMMITS DO PROJETO
+
+git log --oneline
+
+- VER O GRAFICO DE COMMITS 
+
+git log --graph
+ou 
+git log --oneline --graph 
+
