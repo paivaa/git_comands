@@ -77,3 +77,11 @@ git checkout -b <nome do novo ramo>
 git checkout master 
 git branch master 
 git merge <nome do ramo que irá fundir>
+
+- CLONAR REPOSITORIO DO GITHUB PRO PC
+
+git clone <url do repositorio>
+
+- ENVIAR DO PC PRA REPOSITORIO NO GITHUB
+
+git push
