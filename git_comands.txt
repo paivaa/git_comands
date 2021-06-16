@@ -1,8 +1,8 @@
 - ALTERAR NOME DE USUARIO, EMAIL E EDITOR
 
-git config --global user.name "nome de usuario"
-git config --global user.email "email de usuario"
-git config --global core.editor code
+git config --global user.name <"nome de usuario">
+git config --global user.email <"email de usuario">
+git config --global core.editor <code>
 
 obs: checar se o visual studio code esta nas variveis de ambiente
 
@@ -26,7 +26,11 @@ obs: o "." indica que tudo irá para o "conteiner" podendo usar "*"
 
 - MANDAR O "CONTEINER" PARA A PASTA .git = salvar e criar uma versão = node
 
-git commit -m "comentario"
+git commit -m <"comentario">
+
+obs: da pra add e commitar usando:
+
+git commit -am <"comentario">
 
 - VER O HISTORICO DE COMMITS DO PROJETO
 
@@ -36,5 +40,40 @@ git log --oneline
 
 git log --graph
 ou 
-git log --oneline --graph 
+git log --oneline --graph
 
+- VERIFICAR QUAL RAMO O PROJETO SE ENCONTRA
+
+git branch
+
+- RASTREANDO E RECUPERANDO VERSÕES ANTERIORES DO PROJETO 
+
+git log --oneline
+git checkout <hash>
+
+- VOLTAR PARA A VERSÃO MAIS ATUAL
+
+git checkout master
+
+- DESFAZER EDIÇÕES FEITAS QUE APARECEM NO git status
+
+git checkout <arquivo>
+
+- DESFAZER UMA EDIÇÃO FEITA QUE JA FOI PASSADA PELO git add 
+
+git reset HEAD
+
+- REMOVENDO UM COMMIT ATUAL E VOLTANDO PRA VERSAO ANTERIOR
+
+git log --oneline
+git reset --hard <hash da versao anterior>
+
+- CRIANDO NOVA RAMIFICAÇÃO
+
+git checkout -b <nome do novo ramo>
+
+- FUNDIR RAMO COM O RAMO MASTER 
+
+git checkout master 
+git branch master 
+git merge <nome do ramo que irá fundir>
