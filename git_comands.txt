@@ -82,6 +82,10 @@ git merge <nome do ramo que irá fundir>
 
 git clone <url do repositorio>
 
-- ENVIAR DO PC PRA REPOSITORIO NO GITHUB
+- ENVIAR ALTERAÇÕES DO PC PRA REPOSITORIO NO GITHUB
 
 git push
+
+- ENVIAR ALTERAÇÕES DO REPOSITORIO DO GITHUB PARA O PC 
+
+git pull
